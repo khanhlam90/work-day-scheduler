@@ -11,7 +11,6 @@ var currentTime = moment().startOf("hour");
 var startTime = moment().startOf('day').add(9,"hours");
 
 // below is to set the time to the time blocks placeholders (9am to 17pm) in HTML:
-
 //9am
 var time9 = startTime.add(0, "h");
 time9= time9.format('hh A');
@@ -32,32 +31,32 @@ var time12 = startTime.add(1, "h");
 time12= time12.format('hh A');
 $("#block12").text(time12);
 
-//13pm
+//13pm = 1PM
 var time13 = startTime.add(1, "h");
 time13= time13.format('hh A');
 $("#block13").text(time13);
 
-//14pm
+//14pm = 2PM
 var time14 = startTime.add(1, "h");
 time14= time14.format('hh A');
 $("#block14").text(time14);
 
-//15pm
+//15pm = 3PM
 var time15 = startTime.add(1, "h");
 time15= time15.format('hh A');
 $("#block15").text(time15);
 
-//16pm
+//16pm = 4PM
 var time16 = startTime.add(1, "h");
 time16= time16.format('hh A');
 $("#block16").text(time16);
 
-//17pm
+//17pm = 5PM
 var time17 = startTime.add(1, "h");
 time17= time17.format('hh A');
 $("#block17").text(time17);
 
-// save content to time block with event listener:
+// save content to time blocks with event listener:
 $(".saveBtn").click(function(event) {
     event.preventDefault();
 
@@ -80,7 +79,6 @@ for (var i = 0; i < localStorage.length; i++) {
 // create function to display time block colors (past-present-future)
 // must compare current time to each ime blocks
 function compareTime() {
-    
     currentTime = moment().startOf("hour");
 
     //9am

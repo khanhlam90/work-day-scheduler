@@ -22,7 +22,7 @@ https://khanhlam90.github.io/work-day-scheduler/
 ## Contribution
 Self-Built and online-research (such as https://stackoverflow.com/ and https://www.w3schools.com/)
 
-## Screenshots demonstrates the web application's appearance and functionality:
+## Screenshots demonstrate the web application's appearance and functionality:
 ![Screenshot-01](./assets/images/ss1.png)
 ![Screenshot-02](./assets/images/ss2.png)
 
