@@ -65,16 +65,12 @@ $(".saveBtn").click(function(event) {
     //console.log(blockText);
     var blockHour = $(this).parent().data("hour");
     //console.log(blockHour);
-
-    if (!blockText) {
-        window.alert("Please enter details for selected time block before saving it!");
-    } else {
-        localStorage.setItem(blockHour, blockText);
-    };
+    localStorage.setItem(blockHour, blockText);
 });
 
 // load the blocks details from local storage
 var timeBlocks = [9, 10, 11, 12, 13, 14, 15, 16, 17];
+
 for (var i = 0; i < localStorage.length; i++) {
     var blockHour = localStorage.getItem(timeBlocks[i]);
     //console.log(blockHour);
